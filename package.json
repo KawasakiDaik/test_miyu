@@ -1,0 +1,17 @@
+{
+  "name": "main-page-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "lucide-react": "^0.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
