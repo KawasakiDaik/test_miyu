@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white">
+    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center h-16">
+                <a href="index.html" class="flex items-center text-gray-300 hover:text-white transition-colors">
+                    <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-5xl font-bold mb-16">Resume</h1>
+            
+            <!-- Experience -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-semibold mb-8 text-gray-200">経歴</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <p class="text-gray-400">2024年4月 - 現在</p>
+                        <h3 class="text-xl font-medium mt-2">基礎科学特別研究員</h3>
+                        <p class="text-gray-300">理化学研究所</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-semibold mb-8 text-gray-200">学歴</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <p class="text-gray-400">2020年4月 - 2022年9月</p>
+                        <h3 class="text-xl font-medium mt-2">博士課程</h3>
+                        <p class="text-gray-300">大阪公立大学 工学研究科 物質化学生命系専攻</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-semibold mb-8 text-gray-200">受賞</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-900 p-6 rounded-2xl">
+                        <p class="text-gray-400">2019年3月</p>
+                        <h3 class="text-xl font-medium mt-2">応用化学賞</h3>
+                        <p class="text-gray-300">大阪府立大学 工学域 物質化学系学類</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download Button -->
+            <div class="flex justify-center mt-12">
+                <button onclick="window.open('resume.pdf')" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full flex items-center space-x-2 transition-colors">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    <span>Download Resume</span>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

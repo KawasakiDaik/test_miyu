@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="author" content="川﨑 大輝" />
+    <title>川﨑 大輝 -KAWASAKI Daiki-</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .backdrop-blur-md {
+            backdrop-filter: blur(12px);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60A5FA, #A855F7, #F97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold">Logo</div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-sm hover:text-gray-300 transition-colors">Home</a>
+                    <a href="resume.html" class="text-sm hover:text-gray-300 transition-colors">Resume</a>
+                    <a href="research.html" class="text-sm hover:text-gray-300 transition-colors">Research</a>
+                    <a href="art.html" class="text-sm hover:text-gray-300 transition-colors">Art</a>
+                    <a href="#contact" class="text-sm hover:text-gray-300 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" onclick="toggleMenu()">
+                    <svg class="h-6 w-6" id="menuIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-black">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-base hover:bg-gray-900">Home</a>
+                <a href="resume.html" class="block px-3 py-2 text-base hover:bg-gray-900">Resume</a>
+                <a href="research.html" class="block px-3 py-2 text-base hover:bg-gray-900">Research</a>
+                <a href="art.html" class="block px-3 py-2 text-base hover:bg-gray-900">Art</a>
+                <a href="#contact" class="block px-3 py-2 text-base hover:bg-gray-900">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-gray-900">
+            <div class="max-w-7xl mx-auto px-4 py-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <h1 class="text-6xl font-bold mb-6 gradient-text">
+                            Your Name
+                        </h1>
+                        <p class="text-xl text-gray-300 mb-8">
+                            基礎科学特別研究員 at 理化学研究所
+                        </p>
+                        <p class="text-lg text-gray-400 leading-relaxed">
+                            ここに自己紹介文が入ります。研究内容や興味分野について簡潔に説明します。
+                        </p>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 p-1">
+                            <img
+                                src="/api/placeholder/800/800"
+                                alt="Profile"
+                                class="w-full h-full object-cover rounded-3xl"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Overview -->
+        <section id="research-overview" class="py-20 px-4">
+            <!-- Research content -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
+            <!-- Contact content -->
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+            } else {
+                menu.classList.add('hidden');
+                menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>';
+            }
+        }
+    </script>
+</body>
+</html>
